@@ -1,11 +1,7 @@
 import React from 'react'
 import Todo from '../Todo/Todo'
 
-function TodoList() {
-    const list = [
-        { id: 1, todoData: 'todo1'},
-        { id: 2, todoData: 'todo2'}
-    ]
+function TodoList({list}) {
   return (
     <div>
       {
