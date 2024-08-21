@@ -2,9 +2,9 @@ import React from 'react'
 
 function Todo({todoData}) {
   return (
-    <div>
+    <div className='todo-wrapper'>
       <input type='checkbox' />
-      {todoData}
+      <h2>{todoData}</h2>
       <button>Edit</button>
       <button>Delete</button>
     </div>
