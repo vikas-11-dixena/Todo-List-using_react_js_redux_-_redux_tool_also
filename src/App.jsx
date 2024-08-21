@@ -6,7 +6,7 @@ import AddTodo from './components/AddTodo/AddTodo';
 function App() {
     const [ lsit, setList] = useState([
         {id: 1, todoData: 'todo1', finished: false},
-        {id: 2, todoData: 'todo2', finished: false}
+        {id: 2, todoData: 'todo2', finished: true}
     ])
   return (
     <div>
@@ -15,7 +15,7 @@ function App() {
       <AddTodo updateList={(todo) => setList([
         ...lsit, {id: lsit.length + 1, todoData: todo, finished: false}
       ])} />
-      <TodoList lsit={list} />
+      <TodoList lsit={list} setList={setList} />
     </div>
   )
 }
