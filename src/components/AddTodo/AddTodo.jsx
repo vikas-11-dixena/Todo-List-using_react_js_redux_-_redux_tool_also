@@ -2,7 +2,7 @@ import "./AddTodo.css";
 import { useContext, useState } from "react";
 import TodoDispatchContext from "../TodoContext/TodoDispatchContext";
 
-function AddTodo({ updateList }) {
+function AddTodo() {
   const [ inputText, setInputText ] = useState("");
   const { dispatch } = useContext(TodoDispatchContext);
   return (
