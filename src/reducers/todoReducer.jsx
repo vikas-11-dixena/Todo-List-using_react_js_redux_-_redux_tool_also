@@ -1,6 +1,4 @@
-import React from 'react'
-
-function todoReducer(state, action) {
+function todoReducer(state = [], action) {
     if(action.type === 'add_todo') {
         let todoData = action.payload.todoData;
         return [
